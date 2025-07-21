@@ -284,12 +284,8 @@ knitr:
 
 
 ```markdown
-
 #| label: setup
 #| include: false
-
-
-knitr::opts_chunk$set(echo = TRUE)
 
 # Prevent scientific notation globally
 options(scipen = 999)
@@ -335,6 +331,7 @@ library(BayesFactor)
 library(pwr)
 library(qgraph)
 library(scales)
+library(here)
 
 
 # Set global theme for consistent plots
