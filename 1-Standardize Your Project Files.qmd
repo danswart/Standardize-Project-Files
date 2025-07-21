@@ -21,6 +21,7 @@ format:
       - swart.css
       - tachyons.min.css
       - r-colors.css
+    mainfont: "Cabin"
     fontsize: 18pt
     lightbox: true
     page-layout: full
@@ -101,9 +102,6 @@ knitr:
 #| label: setup
 #| include: false
 
-
-knitr::opts_chunk$set(echo = TRUE)
-
 # Prevent scientific notation globally
 options(scipen = 999)
 
@@ -148,6 +146,7 @@ library(BayesFactor)
 library(pwr)
 library(qgraph)
 library(scales)
+library(here)
 
 
 # Set global theme for consistent plots
