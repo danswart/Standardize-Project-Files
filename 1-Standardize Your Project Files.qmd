@@ -364,21 +364,6 @@ set.seed(123)
 
 <br>
 
-### .gitattributes (a text file)
-
-```markdown
-
-# Mark CSS files as vendored (third-party) so they don't count toward language stats
-*.css linguist-vendored=true
-
-# Or mark them as documentation if they're styling docs
-*.css linguist-documentation=true
-
-# Ensure R files are properly detected
-*.R linguist-language=R
-*.Rmd linguist-language=R
-
-```
 
 ----
 
@@ -525,13 +510,8 @@ _freeze/
 <br>
 
 
-### Use .gitattributes file when you want to store large media files (videos) in your Git repository using Git LFS (Large File Storage).
 
-When to use it:
-
-* You have video files in your project - The settings track .mov and .mp4 files with Git LFS
-* Your repo includes large media - Regular Git isn't efficient with large binary files
-* You need version control for videos - Like tutorials, demos, or presentation recordings.Rbuildignore
+### .gitattributes (a text file)
 
 Before using:
 
@@ -545,7 +525,6 @@ Before using:
 
 ```
 
-.gitattributes File contents:
 
 ```markdown
 
