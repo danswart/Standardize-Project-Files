@@ -1,6 +1,6 @@
 ---
 title: "Standardize Your Project Files"
-subtitle: "Add these files to each project folder"
+subtitle: ""
 description: ""
 author: 
   - name: "Dan Swart, CPA (ret)"
@@ -392,6 +392,7 @@ crc
 
 # User-specific files
 .Ruserdata
+*.tobedeleted
 
 # Example code in package build process
 *-Ex.R
